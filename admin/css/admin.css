@@ -1,0 +1,178 @@
+/* Gradiam Simple Admin */
+
+/* Start screen ------------------------------------------------------------ */
+
+.gsa-start {
+	max-width: 1100px;
+}
+
+.gsa-start h1 {
+	font-size: 2rem;
+	font-weight: 700;
+	margin: 1.25rem 0 .25rem;
+}
+
+.gsa-start__lead {
+	font-size: 1.125rem;
+	color: #50575e;
+	margin: 0 0 1.5rem;
+}
+
+.gsa-start__preview {
+	display: inline-block;
+	background: #fcf0f1;
+	border-left: 4px solid #d63638;
+	padding: .5rem .75rem;
+	margin: 0 0 1.5rem;
+}
+
+.gsa-tiles {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+	gap: 1rem;
+	margin: 0 0 2rem;
+	padding: 0;
+	list-style: none;
+}
+
+.gsa-tiles li {
+	margin: 0;
+}
+
+.gsa-tile {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	gap: .35rem;
+	height: 100%;
+	box-sizing: border-box;
+	padding: 1.25rem 1.25rem 1.35rem;
+	background: #fff;
+	border: 1px solid #dcdcde;
+	border-radius: 10px;
+	color: #1d2327;
+	text-decoration: none;
+	transition: border-color .15s, box-shadow .15s, transform .15s;
+}
+
+.gsa-tile:hover,
+.gsa-tile:focus {
+	border-color: #2271b1;
+	box-shadow: 0 4px 14px rgba(0, 0, 0, .08);
+	color: #1d2327;
+	transform: translateY(-1px);
+}
+
+.gsa-tile:focus {
+	outline: 2px solid #2271b1;
+	outline-offset: 2px;
+}
+
+.gsa-tile__icon.dashicons {
+	width: 40px;
+	height: 40px;
+	font-size: 40px;
+	color: #2271b1;
+	margin-bottom: .35rem;
+}
+
+.gsa-tile__title {
+	font-size: 1.15rem;
+	font-weight: 600;
+}
+
+.gsa-tile__text {
+	color: #646970;
+	line-height: 1.45;
+}
+
+.gsa-tile__count {
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	background: #d63638;
+	color: #fff;
+	border-radius: 999px;
+	padding: .15rem .6rem;
+	font-size: .8rem;
+	font-weight: 600;
+}
+
+.gsa-tile--alert {
+	border-color: #d63638;
+}
+
+.gsa-tile--alert .gsa-tile__icon.dashicons {
+	color: #d63638;
+}
+
+.gsa-tile--site {
+	background: #f6f7f7;
+}
+
+.gsa-support {
+	background: #fff;
+	border: 1px solid #dcdcde;
+	border-radius: 10px;
+	padding: 1rem 1.25rem;
+	max-width: 520px;
+}
+
+.gsa-support h2 {
+	margin: 0 0 .5rem;
+	font-size: 1.1rem;
+}
+
+.gsa-support p {
+	margin: 0;
+	font-size: 14px;
+	line-height: 1.7;
+}
+
+/* Simple view everywhere ---------------------------------------------------- */
+
+.gsa-simple #contextual-help-link-wrap,
+.gsa-simple #contextual-help-wrap {
+	display: none !important;
+}
+
+/* Profile: options the client does not need. */
+.gsa-simple.profile-php .user-rich-editing-wrap,
+.gsa-simple.profile-php .user-syntax-highlighting-wrap,
+.gsa-simple.profile-php .user-comment-shortcuts-wrap,
+.gsa-simple.profile-php .user-admin-bar-front-wrap,
+.gsa-simple.profile-php .user-url-wrap,
+.gsa-simple.profile-php .user-description-wrap,
+.gsa-simple.profile-php #application-passwords-section {
+	display: none;
+}
+
+/* Settings screen ----------------------------------------------------------- */
+
+.gsa-menu-list {
+	display: grid;
+	gap: .35rem;
+	margin: .75rem 0 1rem;
+	max-width: 720px;
+}
+
+.gsa-menu-list label {
+	display: flex;
+	align-items: center;
+	gap: .5rem;
+	padding: .35rem .5rem;
+	background: #fff;
+	border: 1px solid #dcdcde;
+	border-radius: 6px;
+}
+
+.gsa-menu-list code {
+	margin-left: auto;
+	font-size: 11px;
+	color: #646970;
+	background: none;
+}
+
+.gsa-menu-list .gsa-missing {
+	background: #fcf9e8;
+}
